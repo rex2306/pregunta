@@ -37,7 +37,7 @@
     <button id="yesBtn">Sí</button>
     <button id="noBtn">No</button>
   </div>
-  <div id="message">Sabía que así iba a ser tu respuesta.</div>
+  <div id="message">Me alegra saber que esa sea tu respuesta. Te amo mucho.</div>
 
   <script>
     const yesBtn = document.getElementById('yesBtn');
@@ -48,8 +48,8 @@
 
     noBtn.addEventListener('click', () => {
       noClicks++;
-      noBtn.style.fontSize = ${1.2 + noClicks * 0.3}em;
-      yesBtn.style.fontSize = ${Math.max(0.5, 1.2 - noClicks * 0.1)}em;
+      noBtn.style.fontSize = (1.2 + noClicks * 0.3) + 'em';
+      yesBtn.style.fontSize = Math.max(0.5, 1.2 - noClicks * 0.1) + 'em';
     });
 
     yesBtn.addEventListener('click', () => {
